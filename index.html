@@ -37,7 +37,7 @@
       </div>
     </section>
 
-    <div class="tiny-text">Tiny text at the bottom</div>
+    <div class="tiny-text">use it at 100% zoom pls, I suck at coding</div>
 
     <footer>
         <div class="footer-content">
@@ -48,19 +48,16 @@
   </div>
 
   <script>
-    // Function to update visitor count
+
     function updateVisitorCount() {
-      // You can implement server-side logic to fetch the actual count
-      // For now, let's simulate an increase in the count on each page load
+
       let count = parseInt(localStorage.getItem('visitorCount')) || 0;
       count++;
       localStorage.setItem('visitorCount', count);
   
-      // Update the count displayed on the page
       document.getElementById('count').textContent = count;
     }
   
-    // Call the function when the page loads
     updateVisitorCount();
   </script>
   
