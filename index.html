@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EN07Z</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>EN07Z's cool ass website</h1>
+    </header>
+
+    <section class="content-section">
+      <div class="user-profile">
+        <h2>user profile</h2>
+        <img src="profile.jpg" alt="User Image" class="user-image">
+        <p><strong>name:</strong> gurbanov aykhan</p>
+        <p><strong>age:</strong> enough</p>
+        <p><strong>location:</strong> no need to know</p>
+        <p><strong>email:</strong> aykhangurbanov0250@gmail.com</p>
+
+        <h2>About</h2>
+        <p>so, uhh, i suck at coding, i can do a little 3d, uhh, idk i don't have any special skills. i don't even know why does this website even exist.
+            maybe someday i'll use this as my portfolio, who knows.
+        </p>
+
+        <h2>find me on: (if you even care)</h2>
+        <u1>
+            <li><a href="https://www.discordapp.com/users/829732655829483521" target="_blank">discord</a></li>
+            <li><a href="https://www.instagram.com/en07z/" target="_blank">instagram</a></li>
+            <li><a href="https://www.youtube.com/channel/UCG1uOB91GNKia2cnxOi0sZg" target="_blank">youtube</a></li>
+        </u1>
+
+      </div>
+    </section>
+
+    <div class="tiny-text">Tiny text at the bottom</div>
+
+    <footer>
+        <div class="footer-content">
+            &copy; EN07Z 2024 - all rights reserved.
+            <div id="visitor-count">total visitors: <span id="count">0</span></div>
+        </div>
+    </footer>
+  </div>
+
+  <script>
+    // Function to update visitor count
+    function updateVisitorCount() {
+      // You can implement server-side logic to fetch the actual count
+      // For now, let's simulate an increase in the count on each page load
+      let count = parseInt(localStorage.getItem('visitorCount')) || 0;
+      count++;
+      localStorage.setItem('visitorCount', count);
+  
+      // Update the count displayed on the page
+      document.getElementById('count').textContent = count;
+    }
+  
+    // Call the function when the page loads
+    updateVisitorCount();
+  </script>
+  
+</body>
+</html>
