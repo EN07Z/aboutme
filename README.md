@@ -1,0 +1,3 @@
+a very simple "about me" website I've made while learning HTML and CSS.
+
+it has a working visitor counter... yay...
